@@ -17,8 +17,8 @@ header {
 
     z-index: 1000;
     top: 0;
-    width: 100vw;
-    height: 2000px;
+    width: 100%;
+    height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,21 +42,20 @@ body {
 
 
 
-
-
-
 header #links {
 
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    position: fixed;
+    position: static;
     justify-content: center;
     width: 100%;
+    height: 50px;
     display: flex;
     gap: 15px;
     text-shadow: 2px 2px 15px;
     padding: 10px;
     border-radius: 10px;
+
 }
 
 
@@ -75,7 +74,7 @@ header a {
 
 header a:hover {
 
-    color: rgb(253, 58, 204) !important;
+    color: rgb(245, 220, 0) !important;
     font-size: 18px;
 
 }
@@ -233,14 +232,14 @@ footer {
     padding: 10px 0;
 }
 
-footer a{
+footer a {
     color: white;
 }
 
 .btnStart1 {
 
     margin-top: 20px;
-    background-image: linear-gradient(to bottom, #d000a5, #d52db2, #d944bf, #dd56cc, #e167d8);
+    background-image: linear-gradient(to bottom, #000000, #0e0e0e, #171717, #1f1f1f, #272727);
     color: rgb(255, 255, 255);
     text-shadow: 0 0 7px rgb(0, 0, 0);
     width: 200px;
@@ -288,7 +287,7 @@ footer a{
 #btnOrder {
 
     margin-top: 5px;
-    background-image: linear-gradient(to bottom, #d000a5, #d52db2, #d944bf, #dd56cc, #e167d8);
+    background-image: linear-gradient(to bottom, #000000, #0e0e0e, #171717, #1f1f1f, #272727);
     color: rgb(255, 255, 255);
     text-shadow: 0 0 7px rgb(0, 0, 0);
     width: 100%;
@@ -355,7 +354,7 @@ footer a{
     z-index: 1000;
     left: -500px;
     background-color: rgb(53, 50, 52);
-    border: 3px solid #d000a5;
+    border: 3px solid #ffffff;
     position: fixed;
     gap: 3px;
     margin-top: 10px;
@@ -367,7 +366,7 @@ footer a{
     width: 350px;
     max-height: 100%;
     overflow-y: scroll;
-    
+
 }
 
 
@@ -618,7 +617,7 @@ input {
     #formBasic {
 
         max-height: 80%;
-       margin-top: 20%;
+        margin-top: 20%;
     }
 
 
@@ -719,7 +718,7 @@ input {
         width: 300px;
     }
 
-    
+
 
     input {
         padding: 7px;
