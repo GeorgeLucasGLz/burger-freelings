@@ -239,10 +239,8 @@ function enviarFormCaseiro() {
 
 const btnHome = document.getElementById('btn-home')
 const btnPersonalized = document.querySelector('#btn-personalized')
-const btnHouseMade = document.querySelector('#btn-house-made')
 const btnSpace = document.getElementById('btn-space')
-const btnInformation = document.getElementById('btn-informations')
-
+const firstContact = document.querySelector('#first-contact')
 
 
 function scrollIntoElement(elementSelect, instace = 0) {
@@ -257,6 +255,22 @@ function scrollIntoElement(elementSelect, instace = 0) {
     }
 
 }
+
+firstContact.addEventListener('click', (event) => {
+
+    event.preventDefault()
+    scrollIntoElement('.personalized-section')
+    mascara.style.visibility = "hidden"
+    if (window.innerWidth < 1000) {
+        ulToggleBox.style.visibility = 'hidden'
+    } else {
+        ulToggleBox.style.visibility = 'visible'
+    }
+
+
+    return
+})
+
 
 btnHome.addEventListener('click', (event) => {
 
@@ -290,19 +304,6 @@ btnPersonalized.addEventListener('click', (event) => {
 })
 
 
-btnHouseMade.addEventListener('click', (event) => {
-
-    event.preventDefault()
-    scrollIntoElement('.house-made-section')
-    mascara.style.visibility = "hidden"
-
-    if (window.innerWidth < 1000) {
-        ulToggleBox.style.visibility = 'hidden'
-    } else {
-        ulToggleBox.style.visibility = 'visible'
-    }
-})
-
 btnSpace.addEventListener('click', (event) => {
 
     event.preventDefault()
@@ -318,22 +319,6 @@ btnSpace.addEventListener('click', (event) => {
 
 })
 
-
-
-btnInformation.addEventListener('click', (event) => {
-
-    event.preventDefault()
-    scrollIntoElement('.info-section')
-    mascara.style.visibility = "hidden"
-
-    if (window.innerWidth < 1000) {
-        ulToggleBox.style.visibility = 'hidden'
-    } else {
-        ulToggleBox.style.visibility = 'visible'
-    }
-
-    return
-})
 
 
 
